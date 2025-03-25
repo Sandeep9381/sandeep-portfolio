@@ -150,6 +150,13 @@ section{
     animation: leftSlide 1s ease forwards;
     animation-delay: 1.4s;
 }
+
+@media(max-width:450px){
+    .text-content p{
+        text-align: center;
+    }
+}
+
 @keyframes leftSlide{
     0%{
         transform: translateX(100px);
@@ -164,11 +171,19 @@ section{
     width: 32.5rem;
     height: 5rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 2rem 0;
     position: relative;
+   
 }
+
+
+@media(max-width:450px){
+    .btn-section {
+        justify-content: center;
+    }
+}
+
 .btn-section::before{
     content: "";
     position: absolute;
@@ -205,6 +220,7 @@ section{
     position: relative;
     overflow: hidden;
     z-index: 1;
+ 
 }
 .btn::before{
     content: "";
@@ -286,6 +302,16 @@ i:hover::after{
     animation-delay: 2s;
 }
 
+@media(max-width:450px){
+    .img-container{
+        width: 300px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @keyframes Scale{
     0%{
         scale: 0;
@@ -303,6 +329,13 @@ i:hover::after{
     scale: 0;
     animation-delay: 2s;
     filter: drop-shadow(1px 2px 3px #2222229d); 
+}
+
+@media(max-width:450px){
+    .img-container img{
+        min-width: 100%;
+        height: 350px;
+    }
 }
 @keyframes Scale{
     0%{
@@ -656,6 +689,12 @@ section.start-animation .certificate-box2{
     font-size: 2rem;
 }
 
+@media(max-width:450px){
+    .single-certificate span{
+        font-size: 1.5rem;
+    }
+}
+
 .single-certificate span .btn{
     margin-top: 15px;
     width: 100px;
@@ -687,6 +726,12 @@ section.start-animation .certificate-box2{
     opacity: 0;
 }
 
+@media(max-width:450px){
+    .contact h1{
+        font-size: 40px;
+    }
+}
+
 @keyframes Contact{
     0%{
         transform: translateY(100px);
@@ -707,6 +752,12 @@ section.start-animation .certificate-box2{
     margin-top: 30px;
 }
 
+@media(max-width:450px){
+    .contact-container{
+        height: 100px;
+    }
+}
+
 .contact-container h2{
     text-align: center;
     font-size: 25px;
@@ -714,6 +765,12 @@ section.start-animation .certificate-box2{
     animation-delay: calc(.2s * var(--vlr));
     transform: translateY(100px);
     opacity: 0;
+}
+
+@media(max-width:450px){
+    .contact h2{
+        font-size: 15px;
+    }
 }
 
 @keyframes Contact1{
